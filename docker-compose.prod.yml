@@ -1,0 +1,16 @@
+name: homepage-landingpage # project name, wichtig, um andere Container nicht zu entfernen
+
+services:
+  web:
+    image: ghcr.io/fw-lehr/website-landingpage:latest
+    container_name: homepage-landingpage
+    restart: unless-stopped
+    environment:
+      - VIRTUAL_HOST=go.fw-lehr.de
+      - LETSENCRYPT_HOST=go.fw-lehr.de
+    networks:
+      - fwlehr-net
+
+networks:
+  fwlehr-net:
+    external: true

@@ -1,0 +1,9 @@
+name: homepage-landingpage # project name, wichtig, um andere Container nicht zu entfernen
+
+services:
+  web:
+    build: .
+    container_name: homepage-landingpage
+    ports:
+      - "8080:80"
+
