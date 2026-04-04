@@ -22,7 +22,7 @@ const FirefighterLanding = () => {
     {
       icon: <Globe className="w-6 h-6" />,
       label: "Website",
-      url: "https://feuerwehr-lehr.de"
+      url: "https://www.fw-lehr.de"
     },
     {
       icon: <Mail className="w-6 h-6" />,
