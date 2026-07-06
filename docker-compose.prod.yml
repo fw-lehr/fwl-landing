@@ -8,6 +8,7 @@ services:
     environment:
       - VIRTUAL_HOST=go.fw-lehr.de
       - LETSENCRYPT_HOST=go.fw-lehr.de
+      - VIRTUAL_PATH=/
     networks:
       - fwlehr-net
 
